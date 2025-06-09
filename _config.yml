@@ -39,7 +39,7 @@ collections:
   posts:
     title: Rashmi Bhoj # Needed for Siteleaf
     output: true
-    description: "" # The post list page content
+    description: "# Hi, I'm Rashmi! I'm data scientist obsessed with logic and creativity, currently working at Mudflap and with a background in data science from UC Berkeley." # The post list page content
 
 # 6. Jekyll collections settings
 defaults:
