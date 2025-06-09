@@ -1,67 +1,30 @@
-# Site configuration
-# 1. Files excluded from Jekyll builds
-# 2. Installed Gems
-# 3. Gem settings
-# 4. Jekyll settings
-# 5. Collections
-# 6. Jekyll collections settings
-# 7. Site settings
+title: "Rashmi Bhoj"
+description: "Data scientist obsessed with logic and creativity — currently working at Mudflap, with a background in data science from UC Berkeley."
+url: "https://yourusername.github.io"
+baseurl: ""
+lang: en-GB
 
-# 1. Files excluded from Jekyll builds
-exclude:
-- README.md
-- CODE_OF_CONDUCT.md
-- CONTRIBUTING.md
-- screenshot.png
-- LICENSE
-- CNAME
-- Gemfile
-- Gemfile.lock
-- garth-jekyll-theme.gemspec
-
-# 2. Installed Gems
-plugins:
-- jekyll-paginate
-
-# 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
-paginate_path: page:num # jekyll-paginate > blog page
-
-# 4. Jekyll settings
 sass:
-  style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
-excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/London # Timezone for blog posts and alike
+  style: compressed
+  load_paths:
+    - _sass
+    - assets/css
 
-# 5. Collections
-collections:
-  posts:
-    title: Rashmi Bhoj # Needed for Siteleaf
-    output: true
-    description: "# Hi, I'm Rashmi! I'm data scientist obsessed with logic and creativity, currently working at Mudflap and with a background in data science from UC Berkeley." # The post list page content
+theme: minima # or beautiful-jekyll if switching
+plugins:
+  - jekyll-paginate
 
-# 6. Jekyll collections settings
+paginate: 5
+paginate_path: "/blog/page:num"
+
 defaults:
-  -
-    scope:
-      path: ""
-      type: pages
-    values:
-      layout: page # Default layout
   -
     scope:
       path: ""
       type: posts
     values:
-      layout: post # Default layout
+      layout: post
+      author: Rashmi Bhoj
 
-# 7. Site settings
-encoding: utf-8 # Make sure the encoding is right
-title: "Rashmi Bhoj" # Site name or title
-logo: "/assets/logo.svg" # Site logo
-# favicon: "/favicon.ico" # Uncomment to add custom favicon, or leave as is to use site logo
-description: "I'm a data scientist obsessed with logic and creativity, with a background in data science from UC Berkeley." # Site description and default description
-url: "https://garth.darn.es" # Site url
-baseurl: ""
-lang: en-GB
+social_links:
+  linkedin: https://linkedin.com/in/rashmibhoj/
