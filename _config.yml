@@ -10,7 +10,7 @@ sass:
     - _sass
     - assets/css
 
-theme: minima # or beautiful-jekyll if switching
+
 plugins:
   - jekyll-paginate
 
